@@ -30,12 +30,15 @@ public class Main extends Application {
         Button btnAlpha = new Button("Alpha");
         Button btnBeta = new Button("Beta");
 
-        btnAlpha.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                response.setText("Alpha was pressed. ");
-            }
-        });
+//        btnAlpha.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                response.setText("Alpha was pressed. ");
+//            }
+//        });
+
+        btnAlpha.setOnAction( (ae) -> response.setText("Alpha was pressed"));
+
 
         btnBeta.setOnAction(new EventHandler<ActionEvent>() {
             @Override
